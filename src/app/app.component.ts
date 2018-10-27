@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Employee } from 'src/classes/Employee';
+import { Gender } from 'src/classes/gender';
 
 
 @Component({
@@ -10,7 +12,8 @@ export class AppComponent {
   title = 'Curs';
 
   constructor() {
-   
+   var newposition = new Employee("Vlad", "Mihai", Gender.Male, "developer");
+    newposition.printPosition();
   }
 }
 
