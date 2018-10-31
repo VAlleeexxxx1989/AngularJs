@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Employee } from 'src/classes/Employee';
 import { Gender } from 'src/classes/gender';
+import { Person } from 'src/classes/Person';
 
 
 @Component({
@@ -9,13 +10,18 @@ import { Gender } from 'src/classes/gender';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Curs';
-
+  // title = 'Curs';
+  person : Person;
+  
   constructor() {
-   var newposition = new Employee("Vlad", "Mihai", Gender.Male, "developer");
-    newposition.printPosition();
+    this.person = new Person("Gengis", "Khan");
   }
+
+
+incrementPro(){
+  this.person.Count();
 }
 
 
 
+}
