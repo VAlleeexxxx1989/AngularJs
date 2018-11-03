@@ -18,8 +18,36 @@
   </li>
 </ul> -->
 
-<div> This is {{ person.firstName }} {{ person.lastName }} !!</div>
+<!-- <div> This is {{ person.firstName }} {{ person.lastName }} !!</div>
 <button (click)="incrementPro()">Click </button>
-<div>Count: {{ person.finishedProjects }}</div>
+<div>Count: {{ person.finishedProjects }}</div> -->
 
+<!-- <div [(ngStyle)]="divProperties">
+
+</div>
+
+<input type="checkbox" [(ngModel)]="currentClass.zoomIn">
+<input type="checkbox" [(ngModel)]="currentClass.zoomOut">
+<button (click)="update()">Update</button>
+
+
+<style>
+  zoomIn {
+    width: 300px !important;
+    height: 300px;
+  }
+  zoomOut {
+    width: 150px;
+    height: 150px;
+  }
+
+</style> -->
+
+<div>
+  My car is a <strong>{{Car.model}}</strong> ({{car.description}})
+</div>
+
+<button (click)=model>
+  Add Car
+</button>
 <router-outlet></router-outlet>

@@ -1,4 +1,25 @@
 
+export class Car {
+    model: string;
+    description: string;
+
+    constructor (model:string , description: string){
+        this.model = model;
+        this.description = description;
+
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
 
 // export class Car{
 //     engine:string;
