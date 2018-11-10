@@ -39,11 +39,11 @@ export class AppComponent {
 //   }
 // }
 
-car:();
+// car:();
 
-constructor(){
-  var model = prompt("what model is you car?")
-  var description = prompt("what is the description of your car?")
-}
+// constructor(){
+//   var model = prompt("what model is you car?")
+//   var description = prompt("what is the description of your car?")
+// }
 
-}
+ }
